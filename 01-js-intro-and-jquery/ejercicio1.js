@@ -3,19 +3,19 @@ $(document).ready(function() {
 
 	var link = 'http://bootcamp.aws.af.cm/welcome/';
 
-	$('#seccion1').fadeIn();	
+	$('#section1').fadeIn();	
 	
-	$('#input').focus();
+	$('#tbName').focus();
 
-	function colorea(texto,nombre){
-		var welc = texto.substring(0,7);
-		$('#campo').html(welc + ' ' + '<span>' + nombre + '</span>' + '!');
+	function highLigth(pText,pName){
+		var welc = pText.substring(0,7);
+		$('#field').html(welc + ' ' + '<span>' + pName + '</span>' + '!');
 	};
   
-	$('#btn').click(function(){
+	$('#btnGetResponse').click(function(){
 		
-		var name = $('#nombre').val();
-			
+		var name = $('#tbName').val();
+    
 		$.ajax({
   			type: "GET",
   			url: link + name,
@@ -25,8 +25,8 @@ $(document).ready(function() {
   			},
   			
   			success : function(response) {
-  				var texto = response["response"]
-  				colorea(texto,name);
+  				var text = response["response"]
+  				highLigth(text,name);
   			},
   			
   			done : function() {
@@ -34,12 +34,10 @@ $(document).ready(function() {
   			},
   			
   			fail : function() {
-   				$('#campo').css('color','red');
+   				$('#field').css('color','red');
   			},
   			
-  			always : function() {
-  				alert( "Siempre" );
-  			}
+  			always : function() {}
 		});
 
 	});

@@ -426,25 +426,30 @@ th {
   padding: 0;
 }
 
-#section1{
-	display: none;
+*{
+	font-family: verdana;
 }
 
-section{	
-	width: 99%;
+#searchHeader{
+	margin-top: 10px;
+	width: 20%;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
 }
 
-input{
-	margin-top: 10px;
+article{
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black; 
+  border-radius: 10px;
+	width: 30%;
+  margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#btnGetResponse{
-  margin-top: 10px;
-}
-
-span{
-  background-color: #FFFF00 ;
+img{
+  position: relative;
+  margin-left: 180px;
+	width: 200px;
+	height: 200px;
 }
