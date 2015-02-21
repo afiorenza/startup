@@ -1,0 +1,16 @@
+var Actor = ( function () {
+
+		function Actor(pName) {
+			var name; 
+		
+
+			this.setName = function(pName) {
+				this.name = pName;
+			};
+
+			this.getName = function() {
+				return this.name;
+			}; 	
+		};
+
+	})(); 
