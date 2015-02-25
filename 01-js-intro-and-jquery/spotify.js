@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var linkSearch = "https://api.spotify.com/v1/search";
+	var linkSearch = "https://api.spotify.com/v1/search", gData;
 
 	$('#tbArtist').focus();
 
@@ -35,42 +35,45 @@ $(document).ready(function() {
 		$('#' + pIndex).append("<img src= " + pImage + ">");	
 	};
 
+  function ajaxCall (pArtistName,pCallBack) {
+    $.ajax({
+        type: 'GET',
+        url: linkSearch,
+        dataType: 'json',
+        data:{ 
+            q : pArtistName,
+            type : "album",
+            callback : "foo",
+        },
+        
+        success : function(response) {
+          console.log('ajax success');
+          gData = response;     
+          rta = "success";
+          return pCallBack(rta); 
+        },  
+
+        fail : function() {
+          rta = 'fail';
+          return rta;
+        }
+      });
+  };
+
 	$('#btnConfirm').click(function(event) {
 
     $('div').empty();
-		var artistName = $('#tbArtist').val();
+		var artistName = $('#tbArtist').val(),
+    resp;
 
-		$.ajax({
-   			type: 'GET',
-    		url: linkSearch,
-        dataType: 'json',
-    		data:{ 
-      			q : artistName,
-      			type : "album",
-            callback : "foo"
-      		},
-
-      		beforeSend : function () {
-      		
-  			},
-  			
-  			success : function(response) {
-  				runLoop(response);
-  			},
-  			
-  			done : function() {
-    			alert( "success" );
-  			},
-  			
-  			fail : function() {
-   				$('#campo').css('color','red');
-  			},
-  			
-  			always : function() {
-  				alert( "Siempre" );
-  			}
-  		});
-
-	});
+    ajaxCall(artistName,function(resp){
+      if (resp == 'success') {
+        runLoop(gData);
+      } else if (resp == 'fail') {
+        $('#campo').css('color','red');
+      };
+      console.log('bueno');
+    });
+  });
 
 });
