@@ -4,7 +4,7 @@ function movie () {
 
   var attributes = {},
   actors = [],
-  director = new Director();
+  director;
   
   this.set = function (pAttribute,pValue){
     attributes[pAttribute] = pValue;
@@ -21,6 +21,11 @@ function movie () {
   this.stop = function () {
   console.log("Stopping " + this.get('name'));
   };
+
+  this.createDirector = function (pName) {
+    director = new Director (pName);
+    return director;
+  }
 
   this.setDirector = function (pDirector) {
     director = pDirector;

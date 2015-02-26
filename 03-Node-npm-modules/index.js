@@ -30,26 +30,28 @@ module.exports = director;
 $(document).ready (function () {
 
 	var Movie = require('./movieClass.js');	
-	var Director = require('./director.js');
+	//var Director = require('./director.js');
 
-	var terminator = new Movie();
-	var stevenSpielberg = new Director('Steven Spielberg');
+	var starWars = new Movie();
+	//var stevenSpielberg = new Director('Steven Spielberg');
+
+	var stevenSpielberg = starWars.createDirector('Steven Spielberg');
 
 	stevenSpielberg.addQuote('All good ideas start out as bad ideas, that why is takes so long.');
 	stevenSpielberg.addQuote('This opportunity … allows all of us to reach out directly to open a much wider door.');
 
-	terminator.setDirector(stevenSpielberg);
+	starWars.setDirector(stevenSpielberg);
 
-	console.log(terminator.getDirector().speak());
+	console.log(starWars.getDirector().speak());
 });
-},{"./director.js":1,"./movieClass.js":3}],3:[function(require,module,exports){
+},{"./movieClass.js":3}],3:[function(require,module,exports){
 var Director = require('./director.js');
 
 function movie () {
 
   var attributes = {},
   actors = [],
-  director = new Director();
+  director;
   
   this.set = function (pAttribute,pValue){
     attributes[pAttribute] = pValue;
@@ -66,6 +68,11 @@ function movie () {
   this.stop = function () {
   console.log("Stopping " + this.get('name'));
   };
+
+  this.createDirector = function (pName) {
+    director = new Director (pName);
+    return director;
+  }
 
   this.setDirector = function (pDirector) {
     director = pDirector;
