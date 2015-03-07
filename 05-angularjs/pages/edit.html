@@ -1,0 +1,16 @@
+<link rel="stylesheet" type="text/css" href="/config/addStyle.css">
+
+<h3>Edit the film</h3>
+
+<div ng-controller="edit">
+	<p>Title</p>
+	<input type="text" ng-model="title"><br>
+	<p>Plot</p>
+	<textarea type="text" ng-model="plot" cols="100" rows="3"></textarea><br>
+	<p>Year</p>
+	<input type="text" ng-model="year"><br>
+	<div class="buttons">	
+		<button ng-click="save()">Save</button>
+	</div>
+	<p class="error">{{error}}</p>
+</div>

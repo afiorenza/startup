@@ -1,0 +1,202 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'angular-local-storage' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 silly cache add args [ 'angular-local-storage', null ]
+6 verbose cache add spec angular-local-storage
+7 silly cache add parsed spec { raw: 'angular-local-storage',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'angular-local-storage',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed angular-local-storage@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'angular-local-storage', range: '*', hasData: false }
+12 silly mapToRegistry name angular-local-storage
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/angular-local-storage
+16 verbose addNameRange registry:https://registry.npmjs.org/angular-local-storage not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/angular-local-storage
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 23:38:40
+20 verbose request id ca281f2a86993012
+21 verbose etag "17-1c33e7920872b609810853ff0d84807e"
+22 http request GET https://registry.npmjs.org/angular-local-storage
+23 http 200 https://registry.npmjs.org/angular-local-storage
+24 silly get cb [ 200,
+24 silly get   { date: 'Fri, 06 Mar 2015 02:38:45 GMT',
+24 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"7OJBI6WJKGZKVHWP6YWCTY1U5"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '21115',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     'x-served-by': 'cache-iad2130-IAD',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1425609525.525562,VS0,VE55',
+24 silly get     vary: 'Accept',
+24 silly get     'keep-alive': 'timeout=10, max=50',
+24 silly get     connection: 'Keep-Alive' } ]
+25 verbose get saving angular-local-storage to C:\Users\agustin\AppData\Roaming\npm-cache\registry.npmjs.org\angular-local-storage\.cache.json
+26 silly addNameRange number 2 { name: 'angular-local-storage', range: '*', hasData: true }
+27 silly addNameRange versions [ 'angular-local-storage',
+27 silly addNameRange   [ '0.0.1', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5' ] ]
+28 verbose addNamed angular-local-storage@0.1.5
+29 silly addNamed semver.valid 0.1.5
+30 silly addNamed semver.validRange 0.1.5
+31 silly cache afterAdd angular-local-storage@0.1.5
+32 verbose afterAdd C:\Users\agustin\AppData\Roaming\npm-cache\angular-local-storage\0.1.5\package\package.json not in flight; writing
+33 verbose afterAdd C:\Users\agustin\AppData\Roaming\npm-cache\angular-local-storage\0.1.5\package\package.json written
+34 silly install resolved [ { name: 'angular-local-storage',
+34 silly install resolved     version: '0.1.5',
+34 silly install resolved     description: 'An Angular module that gives you access to the browsers local storage',
+34 silly install resolved     homepage: 'https://github.com/grevory/angular-local-storage',
+34 silly install resolved     main: './dist/angular-local-storage.js',
+34 silly install resolved     scripts: { test: 'grunt test' },
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'https://github.com/grevory/angular-local-storage.git' },
+34 silly install resolved     keywords: [ 'AngularJS', 'local', 'storage' ],
+34 silly install resolved     author: { name: 'grevory', email: 'greg@gregpike.ca' },
+34 silly install resolved     license: 'MIT',
+34 silly install resolved     bugs: { url: 'https://github.com/grevory/angular-local-storage/issues' },
+34 silly install resolved     devDependencies:
+34 silly install resolved      { grunt: '~0.4.2',
+34 silly install resolved        'grunt-cli': '~0.1.9',
+34 silly install resolved        'grunt-contrib-concat': '*',
+34 silly install resolved        'grunt-contrib-jshint': '~0.8.0',
+34 silly install resolved        'grunt-contrib-uglify': '*',
+34 silly install resolved        'grunt-karma': 'latest',
+34 silly install resolved        karma: '~0.12.16',
+34 silly install resolved        'karma-jasmine': '~0.1.5',
+34 silly install resolved        'karma-coverage': '^0.2.6',
+34 silly install resolved        'karma-phantomjs-launcher': '~0.1.4',
+34 silly install resolved        'load-grunt-tasks': '~0.3.0',
+34 silly install resolved        'time-grunt': '~0.2.9' },
+34 silly install resolved     gitHead: 'ae0c28aba9050225a7e3327600307bedd0be8586',
+34 silly install resolved     _id: 'angular-local-storage@0.1.5',
+34 silly install resolved     _shasum: 'f5c435726acc995a30c9c504ee671a3dd529fef5',
+34 silly install resolved     _from: 'angular-local-storage@*',
+34 silly install resolved     _npmVersion: '2.0.2',
+34 silly install resolved     _nodeVersion: '0.10.21',
+34 silly install resolved     _npmUser: { name: 'a8m', email: 'ariel@mashraki.co.il' },
+34 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: 'f5c435726acc995a30c9c504ee671a3dd529fef5',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/angular-local-storage/-/angular-local-storage-0.1.5.tgz' },
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-local-storage/-/angular-local-storage-0.1.5.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install angular-local-storage@0.1.5 into C:\Users\agustin\Documents\GitHub\startup\05-angularjs
+36 info installOne angular-local-storage@0.1.5
+37 verbose installOne of angular-local-storage to C:\Users\agustin\Documents\GitHub\startup\05-angularjs not in flight; installing
+38 verbose lock using C:\Users\agustin\AppData\Roaming\npm-cache\_locks\angular-local-storage-40e1133f52ac0415.lock for C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules\angular-local-storage
+39 silly install write writing angular-local-storage 0.1.5 to C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules\angular-local-storage
+40 silly cache addNamed cb angular-local-storage@0.1.5
+41 verbose unbuild node_modules\angular-local-storage
+42 info preuninstall angular-local-storage@0.1.5
+43 info uninstall angular-local-storage@0.1.5
+44 verbose unbuild rmStuff angular-local-storage@0.1.5 from C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules
+45 info postuninstall angular-local-storage@0.1.5
+46 verbose gentlyRm vacuuming C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules\angular-local-storage
+47 silly gentlyRm purging C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules\angular-local-storage
+48 silly gentlyRm quitting because other entries in C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules
+49 verbose tar unpack C:\Users\agustin\AppData\Roaming\npm-cache\angular-local-storage\0.1.5\package.tgz
+50 verbose tar unpacking to C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules\angular-local-storage
+51 verbose gentlyRm vacuuming C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules\angular-local-storage
+52 silly gunzTarPerm modes [ '777', '666' ]
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+55 silly gunzTarPerm extractEntry .npmignore
+56 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+57 silly gunzTarPerm extractEntry README.md
+58 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+59 silly gunzTarPerm extractEntry LICENSE
+60 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+61 silly gunzTarPerm extractEntry Gruntfile.js
+62 silly gunzTarPerm modified mode [ 'Gruntfile.js', 420, 438 ]
+63 silly gunzTarPerm extractEntry .travis.yml
+64 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+65 silly gunzTarPerm extractEntry CHANGELOG.md
+66 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+67 silly gunzTarPerm extractEntry .gitattributes
+68 silly gunzTarPerm modified mode [ '.gitattributes', 420, 438 ]
+69 silly gunzTarPerm extractEntry .bowerrc
+70 silly gunzTarPerm modified mode [ '.bowerrc', 420, 438 ]
+71 silly gunzTarPerm extractEntry bower.json
+72 silly gunzTarPerm modified mode [ 'bower.json', 420, 438 ]
+73 silly gunzTarPerm extractEntry demo/demo-app.js
+74 silly gunzTarPerm modified mode [ 'demo/demo-app.js', 420, 438 ]
+75 silly gunzTarPerm extractEntry demo/demo-style.css
+76 silly gunzTarPerm modified mode [ 'demo/demo-style.css', 420, 438 ]
+77 silly gunzTarPerm extractEntry demo/demo.html
+78 silly gunzTarPerm modified mode [ 'demo/demo.html', 420, 438 ]
+79 silly gunzTarPerm extractEntry dist/angular-local-storage.js
+80 silly gunzTarPerm modified mode [ 'dist/angular-local-storage.js', 420, 438 ]
+81 silly gunzTarPerm extractEntry dist/angular-local-storage.min.js
+82 silly gunzTarPerm modified mode [ 'dist/angular-local-storage.min.js', 420, 438 ]
+83 silly gunzTarPerm extractEntry src/angular-local-storage.js
+84 silly gunzTarPerm modified mode [ 'src/angular-local-storage.js', 420, 438 ]
+85 silly gunzTarPerm extractEntry src/common.js
+86 silly gunzTarPerm modified mode [ 'src/common.js', 420, 438 ]
+87 silly gunzTarPerm extractEntry test/karma.conf.js
+88 silly gunzTarPerm modified mode [ 'test/karma.conf.js', 420, 438 ]
+89 silly gunzTarPerm extractEntry test/.jshintrc
+90 silly gunzTarPerm modified mode [ 'test/.jshintrc', 420, 438 ]
+91 silly gunzTarPerm extractEntry test/mock/localStorageMock.js
+92 silly gunzTarPerm modified mode [ 'test/mock/localStorageMock.js', 420, 438 ]
+93 silly gunzTarPerm extractEntry test/spec/localStorageSpec.js
+94 silly gunzTarPerm modified mode [ 'test/spec/localStorageSpec.js', 420, 438 ]
+95 info preinstall angular-local-storage@0.1.5
+96 silly install resolved []
+97 verbose about to build C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules\angular-local-storage
+98 info build C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules\angular-local-storage
+99 verbose linkStuff [ false,
+99 verbose linkStuff   false,
+99 verbose linkStuff   false,
+99 verbose linkStuff   'C:\\Users\\agustin\\Documents\\GitHub\\startup\\05-angularjs\\node_modules' ]
+100 info linkStuff angular-local-storage@0.1.5
+101 verbose linkBins angular-local-storage@0.1.5
+102 verbose linkMans angular-local-storage@0.1.5
+103 verbose rebuildBundles angular-local-storage@0.1.5
+104 info install angular-local-storage@0.1.5
+105 info postinstall angular-local-storage@0.1.5
+106 verbose unlock done using C:\Users\agustin\AppData\Roaming\npm-cache\_locks\angular-local-storage-40e1133f52ac0415.lock for C:\Users\agustin\Documents\GitHub\startup\05-angularjs\node_modules\angular-local-storage
+107 verbose stack Error: The package karma does not satisfy its siblings' peerDependencies requirements!
+107 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:103:32
+107 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:225:5
+107 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:138:5
+107 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+107 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+107 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+107 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+107 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+107 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+107 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+108 verbose cwd C:\Users\agustin\Documents\GitHub\startup\05-angularjs
+109 error Windows_NT 6.3.9600
+110 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "angular-local-storage"
+111 error node v0.12.0
+112 error npm  v2.5.1
+113 error code EPEERINVALID
+114 error peerinvalid The package karma does not satisfy its siblings' peerDependencies requirements!
+114 error peerinvalid Peer grunt-karma@0.7.3 wants karma@~0.12.0
+114 error peerinvalid Peer karma-firefox-launcher@0.1.4 wants karma@>=0.9
+114 error peerinvalid Peer karma-html2js-preprocessor@0.1.0 wants karma@>=0.9
+114 error peerinvalid Peer karma-chrome-launcher@0.1.7 wants karma@>=0.9.3
+114 error peerinvalid Peer karma-coffee-preprocessor@0.1.3 wants karma@>=0.9
+114 error peerinvalid Peer karma-mocha@0.1.10 wants karma@>=0.12.8
+114 error peerinvalid Peer karma-script-launcher@0.1.0 wants karma@>=0.9
+114 error peerinvalid Peer karma-phantomjs-launcher@0.1.4 wants karma@>=0.9
+114 error peerinvalid Peer karma-jasmine@0.1.5 wants karma@>=0.9
+114 error peerinvalid Peer karma-requirejs@0.2.2 wants karma@>=0.9
+115 verbose exit [ 1, true ]
